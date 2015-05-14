@@ -1,5 +1,5 @@
 ## Project 1 for Exploratory Data Analysis
-setwd("/Users/weijiang/Documents/MyR")
+
 data = read.table("household_power_consumption.txt",header=T, sep=";")
 data$Date <- as.Date(data$Date,"%d/%m/%Y")
 data$Time <- strptime(data$Time,"%H:%M:%S")
